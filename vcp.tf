@@ -6,7 +6,7 @@ module "network" {
 
   subnets = [
         {
-            subnet_name           = "devyor_subnet-01"
+            subnet_name           = "devyorsubnet"
             subnet_ip             = "10.10.10.0/24"
             subnet_region         = "var.region"
         }
