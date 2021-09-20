@@ -3,11 +3,12 @@ module "network" {
   version = "3.4.0"
   network_name = "devyor-vpc"
   project_id   = "var.project"
-  # insert the 3 required variables here
-    subnets = [
-            {
-                subnet_name           = "devyor_subnet-01"
-                subnet_ip             = "10.10.10.0/24"
-                subnet_region         = "var.region"
-            },
+
+  subnets = [
+        {
+            subnet_name           = "devyor_subnet-01"
+            subnet_ip             = "10.10.10.0/24"
+            subnet_region         = "var.region"
+        }
     ]
+}
